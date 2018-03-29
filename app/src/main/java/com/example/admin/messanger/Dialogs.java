@@ -20,6 +20,7 @@ import java.util.Collections;
 public class Dialogs extends Activity{
 
     ArrayList<String> inList = new ArrayList<>();
+    ArrayList<String> outList = new ArrayList<>();
     int id = 0;
 
     EditText text;
@@ -38,7 +39,7 @@ public class Dialogs extends Activity{
         send = findViewById(R.id.sendMess);
         text = findViewById(R.id.takeMess);
         listView = findViewById(R.id.dialogsMes);
-        listView.setAdapter(new CustomAdapter(this, inList));
+        listView.setAdapter(new CustomAdapter(this, inList, outList));
 
 
         send.setOnClickListener(new View.OnClickListener() {
