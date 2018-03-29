@@ -33,7 +33,8 @@ public class CustomAdapter extends BaseAdapter {
         this.list = list;
     }
 
-    public CustomAdapter(Context context, ArrayList<String> messages) {
+    public CustomAdapter(Context context,ArrayList<String> users, ArrayList<String> messages){
+        this.users = users;
         this.messages = messages;
         this.context = context;
     }
